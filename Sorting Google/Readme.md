@@ -11,6 +11,10 @@ Sorting is done by comparing strings of this form in a lexicographic manner. For
 * "10.2" > "1.31" because 10>1
 * "10.2" > "10" since |"10.2"| = 2 > |"10"| = 1 (size comparison)
 
+## Example
+
+l = ['1.1.2','1.0','1.3.3', '1.0.12','1.0.2'] -> sorted: ['1.0', '1.0.2', '1.0.12', '1.1.2', '1.3.3']
+
 ## Solution
 
 Sorting based on the Merge Sort algorithm (O(nlogn)), utilising a custom string comparator.
