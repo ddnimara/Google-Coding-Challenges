@@ -18,8 +18,6 @@ def partition(n,start=1):
         for p in partition(n-a, a):  # k = n-j
             yield [a]+p
 
-print(list(partition(10)))
-
 def equivalentPartitions(cycle):
     """ Given a partition (which corresponds to specific cycle permutations), finds the number of permutations
         which this partition corresponds to."""
@@ -91,3 +89,4 @@ def solution(w,h,s):
                 exponent += sum(l)
             x_g += m*s**exponent
     return str(int(x_g/g_cardinality))
+print(solution(2,2,2))
