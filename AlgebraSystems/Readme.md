@@ -1,7 +1,6 @@
 # Algebra Systems 
 
-Let us consider all the n x m grids such that each cell contains a number betwee 1 and s (inclusive). We wish to find all the possible grid configurations under the collumn and row
-symmetry. That is, grids a and b are equivalent, if we can form b, by applying row and column swaps on a.
+Let us consider all the n x m grids such that each cell contains a number between 1 and s (inclusive). We wish to find all the possible grid configurations under the collumn and row symmetry. That is, grids a and b are equivalent, if we can form b, by applying row and column swaps on a.
 
 ## Example
 n = m = s = 2
