@@ -1,7 +1,7 @@
 # Reverse Game of Life (Expanding Nebula)
 
 In this problem, we are tasked with analysing a system acting similarly to the famous [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). We are given a grid of 
-O and X at time step 't'. At 't+1', the grid shrinks, with each cell inspecting itself, the one below, the one to the right, and the one diagonally below it:
+O and X at time step 't'. At 't+1', the grid shrinks, with each cell inspecting itself, the one below, the one to the right, and the one diagonally-right below it:
 * If the induced box (containing the four aforementioned cells), contains a single X, then grid[i][j][t+1] = X
 * Else, grid[i][j][t+1] = O
 
