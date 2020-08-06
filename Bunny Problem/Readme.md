@@ -1,7 +1,7 @@
 # Bunny Problem
 
 Suppose we have a matrix m[i][j], such that m[i][j] = time spent on going from point i to point j. First and last columns correspond to the start and exit respectively. All other
-collumns contain a bunny. We are tasked with saving as many bunnies as possible (visiting as many points) within a limiting time. Note that m[i][j] can be negative (gain time).
+collumns contain a bunny. We are tasked with saving as many bunnies as possible (visiting as many points) within a limiting time. Note that m[i][j] can be negative (gain time). Note that we must reach the exit on non negative time.
 
 
 ## Example
