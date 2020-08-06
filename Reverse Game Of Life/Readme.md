@@ -58,7 +58,8 @@ columns. The algorithm (its core) works as follows:
 1. Generate all possible columns. As the rows are at most 10, we have at most 2<sup>10</sup> such columns
 1. Consider matrix count[i][c] = number of solutions for subproblem g[:][:i] with G[:][i] = c (ending with column 'c')
 1. Populate this matrix bottom up, initializing count[0][c] = 1 for all c
-1. For i > 0, for every pair of **legal** columns (c1,c2) (simple O(1) check), count[i+1][c2] += count[i][c1] 
+1. For i > 0, for every pair of **legal** columns (c1,c2) (simple O(1) check), count[i+1][c2] += count[i][c1]. By legal, I refer to columns (c1,c2) such that 
+G[:][c1] and G[:][c2] generate (following aforementioned rules) the corresponding column in g.
 1. Return the sum of the final column: total generating grids G = generating grids ending in c1 + generating grids ending in c2 + ...
 
 Note that I have also further optimised the code:
@@ -66,4 +67,4 @@ Note that I have also further optimised the code:
 * Time wise, by applying further checks (in special cases) to avoid redudant column checking (c1,c2) (see code for more details).
 
 Final time complexity is O(m 4<sup>n</sup>), as we iterate m times (i = 0 to m-1), and in each iteration we check every possible pair (c1,c2) (4<sup>n</sup>). Because n is at most 10,
-the exponent is 'handleable'. Note that it is cruical to make sure n <= m as n is located at the exponent.
+the exponent is 'handleable'. Note that it is crucial to make sure n <= m as n is located at the exponent.
