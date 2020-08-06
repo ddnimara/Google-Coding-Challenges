@@ -1,7 +1,7 @@
 # Markov Terminal Point
 
-This problem tasks us with finding the probability of (eventually) ending up at a stable point-state, given an initial state s0. State transitions follow the markovian property,
-that is our state at time t depends only on our state at t-1. We are given the markovian matrix M', populated with the corresponding transitions, which corresponds 
+This problem tasks us with finding the probability of (eventually) ending up at a stable point-state, given an initial state s0. State transitions follow the markovian property.
+That is, our state at time t depends only on our state at t-1. We are given the markovian matrix M', populated with the corresponding transitions, which corresponds 
 in the most natural way to the markovian matrix M[i][j] = p[s(t) = j | s(t-1) = i] = rowNormalize(M'[i][j]).
 The result must have a specific format [x1, x2, x3, ..., xn, a], such that p1 = x1/a, ... pn = xn/a, pi: the probability of the i-th stable state.
 
