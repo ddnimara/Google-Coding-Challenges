@@ -66,4 +66,4 @@ Note that I have also further optimised the code:
 * Time wise, by applying further checks (in special cases) to avoid redudant column checking (c1,c2) (see code for more details).
 
 Final time complexity is O(m 4<sup>n</sup>), as we iterate m times (i = 0 to m-1), and in each iteration we check every possible pair (c1,c2) (4<sup>n</sup>). Because n is at most 10,
-the exponent is 'handable'. Note that it is cruical to make sure n <= m as n is located at the exponent.
+the exponent is 'handleable'. Note that it is cruical to make sure n <= m as n is located at the exponent.
