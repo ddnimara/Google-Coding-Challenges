@@ -22,7 +22,7 @@ Examplary path: start (3s)-> bunny 0 (1s)-> exit (2s)-> bunny 1 (0s) -> exit (1s
 
 ## Solution
 
-We essentially need to traverse a graph (which can also contain megative edges), visiting as many nodes as we possibly can, before exiting the graph (ending up
+We essentially need to traverse a graph (which can also contain negative edges), visiting as many nodes as we possibly can, before exiting the graph (ending up
 at its last column), within the given time frame. My approach can be summarized as follows:
 1. Run bellman ford for each position to compute a distance matrix, giving us min distance from i to j for every (i,j)
 1. Store corresponding minimum paths
